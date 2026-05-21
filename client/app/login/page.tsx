@@ -6,8 +6,8 @@ import { apiRequest, saveToken } from "@/lib/api";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export default function LoginPage() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("user");
+  const [password, setPassword] = useState("user");
   const [showPassword, setShowPassword] = useState(false);
 
   const [error, setError] = useState("");
