@@ -7,7 +7,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("user");
-  const [password, setPassword] = useState("user");
+  const [password, setPassword] = useState("pass");
   const [showPassword, setShowPassword] = useState(false);
 
   const [error, setError] = useState("");
