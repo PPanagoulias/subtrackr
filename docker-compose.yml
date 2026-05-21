@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: subtrackr-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: subtrackr_user
+      POSTGRES_PASSWORD: subtrackr_password
+      POSTGRES_DB: subtrackr
+    ports:
+      - "5433:5432"
+    volumes:
+      - subtrackr_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  subtrackr_postgres_data:
