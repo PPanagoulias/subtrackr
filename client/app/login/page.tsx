@@ -6,11 +6,11 @@ import { apiRequest, saveToken } from "@/lib/api";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export default function LoginPage() {
-  const [email, setEmail] = useState("user@outlook.com");
-  const [password, setPassword] = useState("pass");
+  const [email, setEmail] = useState("panayiotis@test.com");
+  const [password, setPassword] = useState("pass12");
   const [showPassword, setShowPassword] = useState(false);
 
-  const [error, setError] = useState("");
+  const [error, setError] = useState("pass12");
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
